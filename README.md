@@ -11,3 +11,10 @@ Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a
 
 # Scomposizione del problema
 
+Creare la struttura con realtivi file
+
+Inizializzazione dell'istanza di Vue
+
+Inserimento di un array esterno all'interno di un file js
+
+Creare all'interno del server una variabile che contenga i dati dell'array esterno

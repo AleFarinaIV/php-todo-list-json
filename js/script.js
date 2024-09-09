@@ -6,5 +6,8 @@ createApp({
             todolist: [],
             url: 'server.php',
         }
-    }
+    },
+    methods: {
+
+    },
 }).mount("#app")
