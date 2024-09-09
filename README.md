@@ -22,6 +22,11 @@ Creare all'interno del server una variabile che contenga i dati dell'array ester
 All'interno del server;
     utilizzare la funzione file_get_contents per leggere il contenuto del file todolist.json
     con l'utilizzo di json_decode si converte il contenuto JSON in un oggetto PHP
+    tramite condizione if gestire l'aggiunta del nuovo oggetto
+        quando viene inviata una richiesta POST con un nuovo elemento da aggiungere, lo script controlla se esiste una variabile todoItem
+        se è stato inviato un nuovo elemento esso verrà aggiunto alla lista utilizzando il metodo POST
+        utilizzando la funzione array_push() si va ad aggiungere alla lista il nuovo elemento con i valori id, done e name
+        utilizzando la funzione file_put_contents() il file todolist.json viene sovrascritto con l'array aggiornato
     per indicare al client che la risposta sarà in formato JSON impostare un'intestazione HTTP
     utilizzando json_encode inviare nuovamente i dati, convertiti in JSON, come risposta al client
 
