@@ -18,3 +18,9 @@ Inizializzazione dell'istanza di Vue
 Inserimento di un array esterno all'interno di un file js
 
 Creare all'interno del server una variabile che contenga i dati dell'array esterno
+
+All'interno del server;
+    utilizzare la funzione file_get_contents per leggere il contenuto del file todolist.json
+    con l'utilizzo di json_decode si converte il contenuto JSON in un oggetto PHP
+    per indicare al client che la risposta sarà in formato JSON impostare un'intestazione HTTP
+    utilizzando json_encode inviare nuovamente i dati, convertiti in JSON, come risposta al client
