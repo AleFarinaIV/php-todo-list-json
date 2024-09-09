@@ -8,6 +8,14 @@ createApp({
         }
     },
     methods: {
-
+        getTodolist() {
+            axios.get(this.url).then((result) => {
+                console.log(result.data)
+                this.todolist = result.data;
+            });
+        }
     },
+    mounted(){
+        this.getTodolist();
+    }
 }).mount("#app")

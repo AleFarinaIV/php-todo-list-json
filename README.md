@@ -24,3 +24,8 @@ All'interno del server;
     con l'utilizzo di json_decode si converte il contenuto JSON in un oggetto PHP
     per indicare al client che la risposta sarà in formato JSON impostare un'intestazione HTTP
     utilizzando json_encode inviare nuovamente i dati, convertiti in JSON, come risposta al client
+
+All'interno dell'App;
+    dopo la creazione dell'applicazione Vue impostare i dati iniziali, in questo caso un array vuoto e l'url del nostro server
+    definire i metodi nel blocco methods, il metodo getTodolist effettuerà una chiamata axios al nostro server e in risposta otterrà i dati da inserire all'interno della todolist
+    tramite mounted il metodo gettodolist verrà eseguito automaticamente appena l'app Vue sarà montata ottenendo così i dati della todolist dal server
