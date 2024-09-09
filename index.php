@@ -13,9 +13,16 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="row">
+            <div class="row gy-2">
                 <div class="col-12">
-
+                    <h1>Todo List</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex">
+                        <input type="text" class="form-control" name="todo_item" id="todo_item" placeholder="Aggiungi qualcosa da fare..."
+                        v-model="todo_item">
+                        <button class="btn btn-sm btn-primary" @click="addTodoItem">Add</button>
+                    </div>
                 </div>
             </div>
         </div>

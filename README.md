@@ -32,5 +32,7 @@ All'interno del server;
 
 All'interno dell'App;
     dopo la creazione dell'applicazione Vue impostare i dati iniziali, in questo caso un array vuoto e l'url del nostro server
-    definire i metodi nel blocco methods, il metodo getTodolist effettuerà una chiamata axios al nostro server e in risposta otterrà i dati da inserire all'interno della todolist
+    definire i metodi nel blocco methods
+        il metodo getTodolist effettuerà una chiamata axios(GET) al nostro server e in risposta otterrà i dati da inserire all'interno della todolist
+        il metodo addTodoItem effettuerà una chiamata axios(POST) al nostro server per aggiungere un nuovo elemento alla lista, preso dalla variabile todo_item, e il server restituirà l'array aggiornato
     tramite mounted il metodo gettodolist verrà eseguito automaticamente appena l'app Vue sarà montata ottenendo così i dati della todolist dal server
